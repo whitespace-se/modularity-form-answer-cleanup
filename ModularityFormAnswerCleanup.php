@@ -3,7 +3,7 @@
 Plugin Name: Modularity Form Answer Cleanup
 Description: Removes old form data from Modularity Forms
 Author: Whitespace AB
-Version: 1.0.0
+Version: 1.0.1
 */
 
 register_activation_hook(__FILE__, "form_answer_cleanup_register_schedule");
@@ -15,7 +15,7 @@ function form_answer_cleanup_register_schedule()
 }
 
 add_action("form_answer_cleanup_daily", "form_answer_cleanup");
-function form_answer_cleanup($months = '-6 months', $no_of_submissions = 500)
+function form_answer_cleanup($months = '-100 days', $no_of_submissions = 500)
 {
   $time = strtotime($months, time());
   $date = date("Y-m-d", $time);
