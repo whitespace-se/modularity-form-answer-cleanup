@@ -1,0 +1,28 @@
+# Package files
+composer.lock
+package-lock.json
+
+/wp-content/*
+
+# Plugins
+!/wp-content/plugins
+/wp-content/plugins/*
+!/wp-content/plugins/municipio-alert
+
+!/wp-content/mu-plugins
+
+# Themes
+!/wp-content/themes
+/wp-content/themes/municipio
+/wp-content/themes/*
+!/wp-content/themes/main
+
+# Vendor directories
+vendor
+/wp
+
+# Generated files
+dist
+tmp
+*.min.*
+acf-json

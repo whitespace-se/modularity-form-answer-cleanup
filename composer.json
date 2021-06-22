@@ -1,0 +1,12 @@
+{
+  "name": "whitespace-se/modularity-form-answer-cleanup",
+  "description": "Removes old form data from Modularity Forms",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Whitespace AB",
+      "email": "dev@whitespace.se"
+    }
+  ]
+}
